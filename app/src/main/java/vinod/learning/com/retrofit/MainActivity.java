@@ -41,6 +41,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onFailure(Call<List<RetroPhoto>> call, Throwable t) {
                 progressDoalog.dismiss();
+                
                 Toast.makeText(MainActivity.this, "Something went wrong...Please try later!", Toast.LENGTH_SHORT).show();
             }
         });
